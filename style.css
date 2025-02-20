@@ -84,28 +84,7 @@
     --input-active: var(--black-shade-400);
 
 
-    /* Black & White Shades */
-    --black-shade-100: #f9fafb;
-    --black-shade-200: #f3f4f6;
-    --black-shade-300: #e5e7eb;
-    --black-shade-400: #d1d5db;
-    --black-shade-500: #9ca3af;
-    --black-shade-600: #6b7280;
-    --black-shade-700: #4b5563;
-    --black-shade-800: #374151;
-    --black-shade-900: #1f2937;
-    --black-shade-950: #111827;
 
-    --primary-shade-100: #edffe5;
-    --primary-shade-200: #d6ffc7;
-    --primary-shade-300: #afff95;
-    --primary-shade-400: #74fe4d;
-    --primary-shade-500: #51f526;
-    --primary-shade-600: #2fdb07;
-    --primary-shade-700: #1eb000;
-    --primary-shade-800: #198506;
-    --primary-shade-900: #19690b;
-    --primary-shade-950: #18580f;
 
     /* Font */
     --display-font: "Domine", serif;
@@ -346,6 +325,19 @@ button:focus {
   font-size: medium;
   border: none;
   cursor: pointer;
+  outline: none;
+}
+
+#home #hero_content button:hover {
+  background-color: var(--primary-shade-800);
+}
+
+#home #hero_content button:active {
+  background-color: var(--primary-shade-700);
+}
+
+#home #hero_content button:focus {
+  outline: 2px solid var(--text-color);
 }
 /* home section */
 /* pricing */
@@ -636,6 +628,8 @@ textarea {
   .main-nav img {
     width: 7rem;
   }
+
+  .mobile-menu{display: none;}
 
   #home {
     height: 80vh;
